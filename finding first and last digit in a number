@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+void fd(int n)
+{
+    int q;
+    while(n >= 10)
+    {
+        q = n / 10;
+        n = q; // Update n to avoid infinite loop
+    }
+    printf("First digit: %d\n", q);
+}
+
+void ld(int n)
+{
+    int r;
+   
+        r = n % 10;
+      
+    
+    printf("Last digit: %d\n", r);
+}
+
+int main()
+{
+    int number = 123;
+    fd(number); // Call fd to print the first digit
+    ld(number); // Call ld to print the last digit
+    return 0;
+}
