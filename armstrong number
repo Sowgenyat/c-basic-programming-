@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include<math.h>
+
+void pal(int n)
+{ int rev=0,r,i,count=0;
+int temp=n;
+int ori=n;
+while(n>0)
+{
+    n/=10;
+    count++;
+}
+printf("%d",count);
+    while(temp>0)
+    {
+        r=temp%10;
+        temp=temp/10;
+        rev=rev+(pow(r,count));
+       
+    }
+     printf("%d",rev);
+     
+
+    
+        if(ori==rev) {
+        printf("s");
+    
+    }
+    else{
+        printf("n");
+    }
+}
+   
+
+int main(){
+    
+
+pal(153);
+ 
+return 0;
+}
