@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void pal(int n)
+{ int rev=0,r;
+int temp=n;
+    while(n>0)
+    {
+        r=n%10;
+        n=n/10;
+        rev=rev*10+r;
+       
+    }
+     printf("%d",rev);
+
+    
+        if(temp==rev) {
+        printf("s");
+    
+    }
+    else{
+        printf("n");
+    }
+}
+   
+
+int main(){
+    
+
+pal(1511);
+ 
+return 0;
+}
