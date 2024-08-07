@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void main() {
+  int n=101000088,count=0,i,r;
+  while(n>0)
+  {
+       n/=10;
+       count++;
+  }
+  printf("%d",count);
+}
